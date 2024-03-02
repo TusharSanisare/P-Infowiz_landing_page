@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+}
+
+
+
+
+
+/* ------------------------------ main-cointainer -------------------------------------------------------------------------------------------- */
+.main-container{
+    width: 100vw;
+}
+/* ------------------------------ new-lounched-course -------------------------------------------------------------------------------------------- */
+.new-lounched-course{
+    position: sticky;
+    top: -5px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content:space-around;
+    background: linear-gradient(to right,rgb(255, 0, 85),rgb(111, 0, 255));
+}
+.new-lounched-course h4{
+    display: inline;
+}
+.new-lounched-course-btn{
+    border-radius: 3px;
+    padding: 5px;
+    height: 30px;
+    width: 87px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+.new-lounched-course-btn:hover{
+    position: relative;
+    bottom: 1px;
+    right: 1px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+
+
+
+
+/* ------------------------------ nevbar -------------------------------------------------------------------------------------------- */
+nav{
+    position: sticky;
+    top: 42px;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    width: 100%;
+    background-color: white;
+    padding:10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.317);
+}
+nav .logo-name{
+    color: blueviolet;
+    font-size: 20px;
+}
+nav ul{
+    display: inline-flex;
+}
+nav ul li{
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul li a{
+    transition:  ease 0.1s;
+    font-weight: 600;
+    color: blueviolet;
+    text-decoration: none;
+}
+nav ul li a:hover ,.active{
+    position: relative;
+    bottom: 1px;
+    border-bottom: 2px solid blueviolet;
+}
+.Student-sub-navbar{
+    display: none;
+}
+.Student-sub-navbar ul{
+    margin: 20px;
+    display: flex;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+}
+.Student-sub-navbar ul li{
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.142);
+}
+.Student-sub-navbar ul li:last-child{
+    border-bottom: none
+}
+.Student-sub-navbar ul li a:hover{
+    bottom: 0px;
+    border: none;
+    color: white;
+}
+.Student-sub-navbar ul li a{
+    display: inline-block;
+    padding: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.763);
+}
+.student-li:hover .Student-sub-navbar{
+    display: block;
+}
+
+
+
+
+
+
+
+/* ------------------------------ Courses-nevbar -------------------------------------------------------------------------------------------- */
+.courses-navbar{
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.288);
+    background-color: rgba(179, 3, 255, 0.155);
+}
+.courses-navbar a{
+    color: blueviolet;
+    color: rgba(0, 0, 0, 0.797);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5 10px;
+    /* border: 2px solid rgb(255, 7, 7); */
+}
+.courses-navbar a:hover{
+    position: relative;
+    color: rgb(0, 0, 0);
+    bottom: 1px;
+}
+
+
+
+
+
+
+
+/* ------------------------------ nevbar -------------------------------------------------------------------------------------------- */
+.hero-section{
+    display: flex;
+    height: 75vh;
+    width: 100%;
+    background: linear-gradient(to bottom right ,rgba(255, 255, 255, 0.098),rgba(255, 0, 230, 0.176));
+    /* border: 2px solid red; */
+}
+.hero-text-area{
+    padding: 20px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    color: rebeccapurple;
+    color: rgba(0, 0, 0, 0.92);
+
+    /* background: linear-gradient(to top left,rgba(255, 255, 255, 0.098),rgba(255, 0, 230, 0.176)); */
+}
+.hero-text-area p{
+    font-size: 40px;
+}
+.hero-text-area h1{
+    font-size: 70px;
+    color: rebeccapurple;
+}
+.hero-text-area h2{
+    font-size: 30px;
+}
+.hero-text-area .aim{
+    font-size: 18px;
+}
+
+
+
+
+.hero-picture-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    /* background: linear-gradient(to top right,rgba(255, 255, 255, 0.098),rgba(255, 0, 230, 0.176)); */
+}
+.hero-picture-area img{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------ titelheading -------------------------------------------------------------------------------------------- */
+.titel-heading{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 150px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    border-bottom: 1px solid rebeccapurple;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+}
+.titel-heading span{
+    color:blueviolet;
+}
+
+
+
+
+
+/* ------------------------------ teacher section -------------------------------------------------------------------------------------------- */
+.teacher-section{
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgba(0, 0, 0, 0.119),rgb(255, 255, 255));
+    background: linear-gradient(to top,rgba(255, 0, 230, 0.176),rgb(255, 255, 255));
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.119),rgb(255, 255, 255));
+    padding: 40px;
+    margin-bottom: 50px;
+    height: 450px;
+    display: flex;
+}
+.teacher-picture{
+    background-image: url(kritee_shevade_sir.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    border-radius: 30px;
+}
+.about-teacher{
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rgb(60, 0, 255); */
+}
+.about-teacher p{
+    font-size: 26px;
+}
+.about-teacher p span{
+    color:blueviolet;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------ class img section -------------------------------------------------------------------------------------------- */
+.class-img-container{
+    margin: 40px 0;
+    padding: 50px;
+    width: 100%;
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgba(255, 0, 230, 0.10)); 
+}
+.class-img-section1,.class-img-section2,.class-img-section3{
+    padding: 40px 90px;
+    display: flex;
+    column-gap: 10%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+}
+.class-img-section1 p,.class-img-section2 p,.class-img-section3 p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.701);
+}
+.class-img-container p span{
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 25px;
+}
+.class-img-section1 img,.class-img-section2 img,.class-img-section3 img{
+    width: 300px;
+    transition: all ease-in 0.3s;
+    box-shadow: 5px 5px 0px rgba(137, 43, 226, 0.598);
+}
+.class-img-container img:hover{
+    box-shadow: 5px 5px 0px rgba(137, 43, 226, 0.687);
+    box-shadow: 5px 5px 0px rgba(255, 0, 230, 0.808);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ footer -------------------------------------------------------------------------------------------- */
+.demo-lecture{
+    width: 100%;
+    display: grid;
+    /* grid-template-rows: auto auto 1fr; */
+    /* grid-template-columns: 2px 2px 2fr;
+    row-gap: 20px; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    /* column-gap: 12px; */
+    /* grid-auto-flow: column; */
+    margin-bottom: 250px;
+    margin-top: 40px;
+    height: 500px;
+}
+.video-div{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+    justify-content: center;
+    /* border: 2px solid rgb(0, 255, 242); */
+}
+
+
+
+
+
+/* ------------------------------ footer -------------------------------------------------------------------------------------------- */
+footer{
+    background-color: blueviolet;
+    color: rgb(255,255,216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 40px;
+}
+.footer-logo{
+    border-radius: 5px; 
+    background-image: url(p-infowiz_logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
